@@ -310,7 +310,7 @@ export class CloudSecurityTester {
   async detectMisconfigurations(): Promise<CloudMisconfiguration[]> {
     const misconfigurations: CloudMisconfiguration[] = [];
 
-    for (const resource of this.resources.values()) {
+    for (const resource of Array.from(this.resources.values())) {
       // Check for public accessibility
       if (resource.publiclyAccessible) {
         misconfigurations.push({
