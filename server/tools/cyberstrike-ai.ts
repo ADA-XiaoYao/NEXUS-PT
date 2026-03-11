@@ -509,7 +509,7 @@ export class CyberStrikeAIEngine {
         technique: "Log tampering and deletion",
         effectiveness: 0.65,
       },
-      NetworkDetection: {
+      networkDetection: {
         technique: "DNS tunneling and steganography",
         effectiveness: 0.8,
       },
